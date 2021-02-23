@@ -99,7 +99,7 @@ def main(user, passwd, step):
     response = requests.post(url, data=data, headers=head).json()
     #print(response)
     result = f"{user[:4]}****{user[-4:]}: [{now}] 修改步数（{step}）"+ response['message']
-    print(result)
+    # print(result)
     return result
   
 #获取时间戳
